@@ -1,0 +1,68 @@
+.container {
+    position: relative;
+  }
+  img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: fit-content;
+  }
+  
+  form {
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .form-container {
+    margin: auto;
+    opacity: 1;
+    width: 50%;
+    background: rgba(36, 43, 54, 0.5);
+    /*rgba helps us with the background opacity in cases we dont want to affect the children when we apply opacity on parent*/
+  }
+  
+  .main-body {
+    position: absolute;
+    background-color: #6b75e6;
+    opacity: 0.5;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .reorder {
+    font-family: Arial;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    color: white;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+  }
+  
+  input[type="checkbox"] {
+    height: 20px;
+  }
+  
+  input[type="radio"] {
+    height: 20px;
+  }
+  
+  select {
+    margin-bottom: 15px;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 110px;
+  }
