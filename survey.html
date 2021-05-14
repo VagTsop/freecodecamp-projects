@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="survey.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg" alt="">
+
+    <div class="main-body">
+
+      <div class="fix-opacity">
+      </div>
+    </div>
+
+    <div class="reorder">
+
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+
+
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+
+      <div style="width:38%" class="form-container">
+
+        <form id="survey-form" style="width:75%">
+
+          <div style="margin-top:12px">
+
+            <div>
+              <label id="name-label" for="name">Name</label>
+            </div>
+
+            <input id="name" type="text" placeholder="Enter your name">
+          </div>
+
+          <div>
+            <label id="name-email" for="email">Email</label>
+          </div>
+
+          <div>
+            <input id="email" type="email" placeholder="Enter your Email">
+          </div>
+
+          <div>
+            <label id="number-label" for="number">Age(optional)</label>
+          </div>
+
+          <div>
+            <input id="number" min="1" max="99" type="number" placeholder="Age">
+          </div>
+
+          <div>
+
+            <div>
+              <label for="feature">Which option best describes your current role?</label>
+            </div>
+
+            <select name="feature" id="dropdown">
+              <option value="selectAnOption" selected>Select current role</option>
+              <option value="challenges">Student</option>
+              <option value="projects"> Full Time Job</option>
+              <option value="community"> Full Time Learner</option>
+              <option value="openSource">Prefer not to say</option>
+              <option value="openSource">Other</option>
+            </select>
+          </div>
+
+          <div>
+
+            <div>
+              <p>Would you recommend freeCodeCamp to a friend?</p>
+            </div>
+
+            <div style="width:38%">
+
+              <input style="width:17%" type="radio" id="definetely" name="recommendation" value="definitely" checked>
+
+              <label style="vertical-align:super" for="definitely">Definitely</label>
+            </div>
+
+            <div style="width:35%">
+
+              <input style="width:17%;text-align:end" type="radio" id="maybe" name="recommendation" value="maybe">
+
+              <label style="vertical-align:super;width:85%" for="maybe">Maybe</label>
+            </div>
+
+            <div style="width:38%">
+
+              <input style="width:17%" type="radio" id="notSure" name="recommendation" value="notSure">
+
+              <label style="vertical-align:super" for="notSure">Not sure</label>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <label for="feature">What is your favorite feature of freeCodeCamp? </label>
+            </div>
+
+            <select name="feature" id="feature">
+              <option value="selectAnOption" selected>select an option</option>
+              <option value="challenges">Challenges</option>
+              <option value="projects">Projects</option>
+              <option value="community">Community</option>
+              <option value="openSource">Open Source</option>
+            </select>
+          </div>
+
+          <div>
+            <p>What would you like to see improved? (Check all that apply)</p>
+
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="front" name="interest" value="front">
+              <span for="front">Front-end Projects</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="back" name="interest" value="back">
+              <span for="back">Back-end Projects</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="data_visualization" name="interest"
+                value="data_visualization">
+              <span for="data_visualization">Data Visualization</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="challenge" name="interest" value="challenge">
+              <span for="challenge">Challenges</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="open_source" name="interest" value="open_source">
+              <span for="open_source">Open Source Community</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="gitter_help" name="interest" value="gitter_help">
+              <span for="gitter_help">Gitter help rooms</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="video" name="interest" value="video">
+              <span for="video">Videos</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="city_meetups" name="interest" value="city_meetups">
+              <span for="city_meetups">City Meetups</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="wiki" name="interest" value="wiki">
+              <span for="wiki">Wiki</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="forum" name="interest" value="forum">
+              <span for="forum">Forum</span>
+            </div>
+
+            <div style="width:55%">
+              <input style="width:15%" type="checkbox" id="additional_courses" name="interest"
+                value="additional_courses">
+              <span for="additional_courses">Additional Courses</span>
+            </div>
+          </div>
+
+          <div>
+
+            <div style="width:83%;margin-bottom:15px">
+              <label>Any comments or suggestions? </label>
+            </div>
+
+            <textarea rows="4" cols="50" name="comment">
+                Enter your comment here...</textarea>
+
+          </div>
+
+          <div
+            style="background-color: green;text-align: center;margin-top:15px;margin-bottom:15px;border-radius:3px;height:30px">
+            <button id="submit" style="background-color: green;color:white;border:none;padding-top:8px" type="submit"
+              value="Submit">Submit</button>
+          </div>
+      </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
