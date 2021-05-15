@@ -21,6 +21,9 @@ h3 {
 .column {
     flex-direction: column;
 }
+.logo {
+    font-family: American Typewriter, serif;
+}
 
 #submit {
     color: black;
@@ -35,4 +38,9 @@ h3 {
 input[type=email] {
     width: 100%;
     height: 100%;
+}
+
+.footer {
+    height: 10%;
+    justify-content: center;
 }
