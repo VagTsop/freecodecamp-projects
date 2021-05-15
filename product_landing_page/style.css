@@ -1,0 +1,31 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 98%;
+}
+
+div {
+    display: flex;
+}
+
+h3 {
+    font-family: Arial;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+#submit {
+    color: black;
+    font-weight: bolder;
+    background-color: yellow;
+    font-size: larger;
+    border: none;
+}
