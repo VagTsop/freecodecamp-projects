@@ -17,48 +17,64 @@
 
 <body>
 
-    <div class="row" style="width:100%;justify-content: space-between;align-items:center">
+    <header id="header" class="row" style="width:100%;justify-content: space-between;align-items:center">
 
-        <div style="width:55%;align-items:center">
+        <div style="width:100%;align-items:center;position:fixed;top:0">
 
-            <div style="width:18%;justify-content: flex-end">
+            <div style="width:20%;justify-content: flex-end">
 
                 <span style="font-size: 3em; color: Tomato">
-                    <i class="fas fa-guitar"></i>
+                    <i id="header-img" class="fas fa-guitar"></i>
                 </span>
             </div>
-            <span style="width:2%"></span>
-            <div>
+
+            <span style="width:5%"></span>
+
+            <div style="width:20%">
                 <h1 class="logo" style="text-align:end">Original Guitars</h1>
             </div>
-        </div>
-        <div style="width:15%">
-            <span>Features</span>
-        </div>
-        <div style="width:15%">
-            <span>How It Works</span>
-        </div>
-        <div style="width:15%">
-            <span>Pricing</span>
-        </div>
-    </div>
 
-    <div class="column" style="align-items:center;justify-content: center;height:20%">
-        <div>
-            <h3>Handcrafted, home-made masterpieces</h3>
-        </div>
-        <div style="width:18%">
-            <input type="email" placeholder="Enter your email address">
-        </div>
-        <div style="width:11%;justify-content: center;margin-top: 20px">
-            <button id="submit" type="submit">Get Started</button>
-        </div>
+            <nav id="nav-bar" class="row" style="width:55%">
 
+                <div style="width:33%">
+                    <a class="nav-link" style="color: black" href="#feature">Feature</a>
+                </div>
+
+                <div style="width:33%">
+                    <a class="nav-link" style="color: black" href="#instruction">How It Works</a>
+                </div>
+
+                <div style="width:33%">
+                    <a class="nav-link" style="color: black" href="#price">Pricing</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div style="height:15%"></div>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <div class="column" style="align-items:center;justify-content: center;height:20%">
+
+            <div>
+                <h3>Handcrafted, home-made masterpieces</h3>
+            </div>
+
+            <div style="width:18%">
+                <input id="email" type="email" placeholder="Enter your email address">
+            </div>
+
+
+            <div style="width:11%;justify-content: center;margin-top: 20px">
+                <button id="submit" type="submit">Get Started</button>
+            </div>
+    </form>
     </div>
 
     <div class="column" style="align-items:center;justify-content: center;height:40%">
 
-        <div class="column" style="justify-content: space-between;height:88%;line-height:19px">
+        <div class="column" id="feature" style="justify-content: space-between;height:88%;line-height:19px">
 
             <div class="row" style="width:95%">
 
@@ -126,7 +142,7 @@
 
     <div class="column" style="height:6%"></div>
 
-    <div class="row">
+    <div id="instruction" class="row">
 
         <div style="justify-content: center;width:100%">
 
@@ -139,7 +155,7 @@
     <div class="column" style="height:6%"></div>
 
 
-    <div class="row" style="height:30%;justify-content: center;">
+    <div id="price" class="row" style="height:30%;justify-content: center;">
 
         <div style="width:60%">
 

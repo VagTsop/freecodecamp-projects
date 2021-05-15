@@ -6,6 +6,12 @@ body {
     height: 98%;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: rgb(122, 153, 163);
+    }
+}
+
 div {
     display: flex;
 }
@@ -21,6 +27,7 @@ h3 {
 .column {
     flex-direction: column;
 }
+
 .logo {
     font-family: American Typewriter, serif;
 }
