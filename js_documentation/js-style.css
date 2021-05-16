@@ -29,6 +29,11 @@ div {
   display: flex;
 }
 
+.example {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #eaf5f7;
+}
+
 .row {
   flex-direction: row;
 }
