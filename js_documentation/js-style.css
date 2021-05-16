@@ -1,13 +1,17 @@
 .grid-container {
   width: 18%;
   display: grid;
-  grid-template-columns: 100%;
-  border: 1px solid black;
+  border-right: 1px solid black;
+  grid-template-rows: 100px repeat(14, 50px);
 }
 
 .grid-item {
-  width: 100%;
-  border: 1px solid black;
-  grid-column-start: 1;
-  grid-column-end: 1;
+  width: 95%;
+  border-bottom: 1px solid black;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.grid-item:last-child {
+  border-bottom: none;
 }
