@@ -1,5 +1,15 @@
+
+html {
+  height:100%;
+}
+
+body {
+  height:100%;
+}
+
 .grid-container {
   width: 21%;
+  height:100%;
   display: grid;
   border-right: 1px solid black;
   grid-template-rows: 80px repeat(14, 50px);
