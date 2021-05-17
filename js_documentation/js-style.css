@@ -7,11 +7,18 @@ body {
 }
 
 .grid-container {
-  width: 100%;
+  width: 21%;
   height: 100%;
   display: grid;
   border-right: 3px solid black;
   grid-template-rows: 80px repeat(14, 50px);
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
 }
 
 .grid-item {
@@ -27,6 +34,17 @@ body {
 
 div {
   display: flex;
+}
+
+header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration:  none;
+  color:black;
 }
 
 .example {
