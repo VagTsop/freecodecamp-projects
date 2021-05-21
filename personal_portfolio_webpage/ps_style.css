@@ -52,3 +52,15 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
+#projects {
+    height: 100%;
+    background-color: #1d558287;
+    text-align: center;
+    padding-top: 30px;
+}
+
+iframe {
+    width: 80%;
+    height: 100%;
+}
