@@ -47,7 +47,7 @@ a:hover {
 #welcome_section {
     background-color: #0d1315bf;
     background: repeating-linear-gradient( 45deg, #0d1315bf, #606dbc 0.5px, #465298 0.5px);
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +58,12 @@ a:hover {
     background-color: #1d558287;
     text-align: center;
     padding-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
 }
 
 iframe {
