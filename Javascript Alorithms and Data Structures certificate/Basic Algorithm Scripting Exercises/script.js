@@ -157,3 +157,17 @@ findElement([1, 3, 5, 8, 9, 10], function (num) {
   return num % 2 === 0;
 });
 */
+
+
+/*
+-Boo who
+Check if a value is classified as a boolean primitive. Return true or false.
+
+function booWho(bool) {
+  if (typeof bool === 'boolean') {
+    return true;
+  }
+  return false;
+}
+booWho(null);
+*/
