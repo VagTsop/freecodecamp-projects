@@ -171,3 +171,22 @@ function booWho(bool) {
 }
 booWho(null);
 */
+
+/*
+-Title Case a Sentence
+
+Return the provided string with the first letter of each word capitalized. Make sure the rest of the word is in lower case.
+
+function titleCase(str) {
+  const splittedArray = str.toLowerCase().split(' ');
+  const capitalizedArray = []
+  for (let i = 0; i < splittedArray.length; i++) {
+    capitalizedArray.push(splittedArray[i].replace(
+      splittedArray[i].charAt(0).toLowerCase(),
+      splittedArray[i].charAt(0).toUpperCase()
+    ));
+  }
+  return capitalizedArray.join(' ');
+}
+titleCase("I'm a little tea pot");
+*/
