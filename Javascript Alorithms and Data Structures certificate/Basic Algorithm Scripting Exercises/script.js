@@ -158,7 +158,6 @@ findElement([1, 3, 5, 8, 9, 10], function (num) {
 });
 */
 
-
 /*
 -Boo who
 Check if a value is classified as a boolean primitive. Return true or false.
@@ -204,4 +203,16 @@ function frankenSplice(arr1, arr2, n) {
 }
 
 frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2)
+*/
+
+/*
+-Falsy Bouncer
+
+Remove all falsy values from an array.
+
+function bouncer(arr) {
+  return arr.filter(value => !!value === true);
+}
+
+bouncer([7, "ate", "", false, 9]);
 */
