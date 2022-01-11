@@ -53,3 +53,32 @@ function destroyer(arr) {
 
 destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 */
+
+/*
+- Wherefore art thou
+
+Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument).
+Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
+
+function whatIsInAName(collection, source) {
+  let arr = [];
+  let sourceKeys = Object.keys(source);
+  // Only change code below this line
+
+  arr = collection.filter(item => {
+
+    for (let i = 0; i < sourceKeys.length; i++) {
+      if (!item.hasOwnProperty(sourceKeys[i]) || item[sourceKeys[i]] !== source[sourceKeys[i]]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  )
+  console.log(arr)
+  // Only change code above this line
+  return arr;
+}
+whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2, "cookie": 2 }, { "bat": 2 }], { "apple": 1, "bat": 2 })
+*/
