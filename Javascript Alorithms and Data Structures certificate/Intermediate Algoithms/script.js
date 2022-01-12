@@ -82,3 +82,53 @@ function whatIsInAName(collection, source) {
 }
 whatIsInAName([{ "apple": 1, "bat": 2 }, { "apple": 1 }, { "apple": 1, "bat": 2, "cookie": 2 }, { "bat": 2 }], { "apple": 1, "bat": 2 })
 */
+
+/*
+- Missing letters
+
+Find the missing letter in the passed letter range and return it.
+
+If all letters are present in the range, return undefined.
+
+function fearNotLetter(str) {
+
+   create an array with all english letters as elements
+
+   compare each letter of fullAlphabet string with sample string (use nested loops for this)
+
+   if it find a match between fullAlphabet string  and sample string get a substring from  fullAlphabet string 
+   starting from first character matching position until the end of fullAlphabet string and store it in to newStr variable
+
+  // trim the newStr variable from the end until the common end character
+  // ... further description is coming
+
+  let fullAlphabet = "abcdefghijklmnopqrstuvwxyz";
+  let newStr = "";
+  if (str === fullAlphabet) {
+    return undefined;
+  }
+
+  for (let i = 0; i < fullAlphabet.length; i++) {
+    if (newStr) {
+      break;
+    }
+    for (let j = 0; j < str.length; j++) {
+      if (fullAlphabet.charAt(i) === str.charAt(j)) {
+        newStr = fullAlphabet.substring(
+          fullAlphabet.indexOf(fullAlphabet.charAt(i)),
+          fullAlphabet.length
+        );
+        break;
+      }
+    }
+  }
+
+  for (let k = 0; k < newStr.length; k++) {
+    if (newStr.charAt(k) !== str.charAt(k)) {
+      return console.log(newStr.charAt(k));
+    }
+  }
+}
+
+fearNotLetter("stvwx"); //should return the string u.
+*/
