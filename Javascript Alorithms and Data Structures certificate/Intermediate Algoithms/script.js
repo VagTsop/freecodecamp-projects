@@ -92,26 +92,25 @@ If all letters are present in the range, return undefined.
 
 function fearNotLetter(str) {
 
-   create an array with all english letters as elements
-
-   compare each letter of fullAlphabet string with sample string (use nested loops for this)
-
-   if it find a match between fullAlphabet string  and sample string get a substring from  fullAlphabet string 
-   starting from first character matching position until the end of fullAlphabet string and store it in to newStr variable
-
-  // trim the newStr variable from the end until the common end character
   // ... further description is coming
 
+   // 1  create a base fullAlphabet string to use it as a base for comparison with the parameter string
   let fullAlphabet = "abcdefghijklmnopqrstuvwxyz";
   let newStr = "";
   if (str === fullAlphabet) {
     return undefined;
   }
 
+ // 2 compare each letter of fullAlphabet string with parameter string (use nested loops for this)
   for (let i = 0; i < fullAlphabet.length; i++) {
+    4 // if you have the newStr substring break also from the outer loop
     if (newStr) {
       break;
     }
+
+ //3 if it find a match between fullAlphabet string  and parameter string get a substring from  fullAlphabet string 
+   starting from the same initial character until the parameter string till the end  and store it in to newStr variable and break out of the inner loop
+
     for (let j = 0; j < str.length; j++) {
       if (fullAlphabet.charAt(i) === str.charAt(j)) {
         newStr = fullAlphabet.substring(
@@ -123,6 +122,7 @@ function fearNotLetter(str) {
     }
   }
 
+ 4 // loop newStr substring and if you not find a match with parameter string return this element - the character that missing from parameter string
   for (let k = 0; k < newStr.length; k++) {
     if (newStr.charAt(k) !== str.charAt(k)) {
       return console.log(newStr.charAt(k));
