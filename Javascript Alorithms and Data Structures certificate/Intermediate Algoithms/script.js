@@ -276,9 +276,6 @@ uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 
 Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.
 
-
-
-*/
 function convertHTML(str) {
   let newStr = "";
   let combinedStr = "";
@@ -312,3 +309,4 @@ function convertHTML(str) {
   return (newStr = str === "<>" ? combinedStr : str === "abc" ? str : newStr);
 }
 convertHTML("<>");
+*/
