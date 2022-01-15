@@ -130,3 +130,35 @@ function fearNotLetter(str) {
 
 fearNotLetter("stvwx"); //should return the string u.
 */
+
+/*
+Pig Latin
+
+Pig Latin is a way of altering English Words. The rules are as follows:
+
+- If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add ay to it.
+
+- If a word begins with a vowel, just add way at the end.
+
+function translatePigLatin(str) {
+  const vowelRegex = /^[aeiou]/;
+  const consonantRegex = /[bcdfghjklmnpqrstvwyz]+/;
+  const isVowel = vowelRegex.test(str);
+  const isConsonant = consonantRegex.test(str);
+  const matchedConsonantChars = str.match(consonantRegex).join("");
+  let newStr;
+
+  return isVowel
+    ? (newStr = str.concat("way"))
+    : isConsonant
+    ? (newStr = str
+        .substring(
+          str.indexOf(matchedConsonantChars) + matchedConsonantChars.length
+        )
+        .concat(matchedConsonantChars)
+        .concat("ay"))
+    : "";
+}
+
+translatePigLatin("eight");
+*/
