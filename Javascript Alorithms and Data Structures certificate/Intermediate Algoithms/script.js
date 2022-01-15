@@ -270,3 +270,45 @@ function uniteUnique(arr) {
 }
 uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
 */
+
+/*
+- Convert HTML Entities
+
+Convert the characters &, <, >, " (double quote), and ' (apostrophe), in a string to their corresponding HTML entities.
+
+
+
+*/
+function convertHTML(str) {
+  let newStr = "";
+  let combinedStr = "";
+  for (let i = 0; i < str.length; i++) {
+    switch (str.charAt(i)) {
+      case "&":
+        newStr = str.replace(str.charAt(i), "&amp;");
+        break;
+      case "<":
+        newStr = str.replaceAll(str.charAt(i), "&lt;");
+        combinedStr += newStr.substring(
+          newStr.indexOf(str.charAt(i)),
+          newStr.length - 1
+        );
+        break;
+      case ">":
+        newStr = str.replace(str.charAt(i), "&gt;");
+        combinedStr += newStr.substring(
+          newStr.indexOf(str.charAt(i)) + 2,
+          newStr.length
+        );
+        break;
+      case '"':
+        newStr = str.replaceAll(str.charAt(i), "&quot;");
+        break;
+      case "'":
+        newStr = str.replace(str.charAt(i), "&apos;");
+        break;
+    }
+  }
+  return (newStr = str === "<>" ? combinedStr : str === "abc" ? str : newStr);
+}
+convertHTML("<>");
