@@ -310,3 +310,34 @@ function convertHTML(str) {
 }
 convertHTML("<>");
 */
+
+/*
+function sumFibs(num) {
+  let start = 0;
+  let next = 1;
+  let current;
+  let sumOdd = 0;
+
+  for (let i = 0; i <= num; i++) {
+    current = start + next;
+    start = next;
+    next = current;
+
+    if (current % 2 !== 0 && current <= num) {
+      sumOdd += current;
+    }
+
+
+  }
+
+  console.log(sumOdd)
+  return sumOdd + 1;
+}
+
+sumFibs(4);
+
+// 0 + 1= 1
+// 1 + 1= 2
+// 1 + 2= 3
+// 2 + 3= 5
+*/
