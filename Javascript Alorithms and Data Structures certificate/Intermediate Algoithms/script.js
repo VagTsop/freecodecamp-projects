@@ -341,3 +341,34 @@ sumFibs(4);
 // 1 + 2= 3
 // 2 + 3= 5
 */
+
+/*
+-Sum All Primes
+
+function sumPrimes(num) {
+  let sumPrimes = 0;
+  for (let i = 2; i <= num; i++)
+    if (isPrime(i)) {
+      sumPrimes += i;
+    }
+  return sumPrimes;
+}
+/*
+Find if a number is prime with Trial Division
+A number is a Prime if:
+1. is divisible by 1
+2. is divisible by itself
+a. We start the loop from i = 2 since 1 cannot be a prime number and we loop i          
+   up until num / 2
+b. if i divides num between this range num cannot be a prime number
+
+function isPrime(num) {
+  for (let i = 2; i <= num / 2; i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+sumPrimes(10);
+*/
