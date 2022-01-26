@@ -523,7 +523,6 @@ setFirstName(first)
 setLastName(last)
 setFullName(firstAndLast)
 
-
 var Person = function (firstAndLast) {
   let fullName = firstAndLast;
 
@@ -543,15 +542,32 @@ var Person = function (firstAndLast) {
     fullName = name + " " + fullName.split(" ")[1];
   };
 
-  this.setLastName = function (name) {
-    fullName = fullName.split(" ")[0] + " " + name;
+
+/*
+- Map the Debris
+
+Return a new array that transforms the elements' average altitude into their orbital periods (in seconds).
+
+The array will contain objects in the format {name: 'name', avgAlt: avgAlt}.
+
+function orbitalPeriod(arr) {
+  const GM = 398600.4418;
+  const earthRadius = 6367.4447;
+  const a = 2 * Math.PI;
+  const newArr = [];
+
+  const getOrbPeriod = function (obj) {
+    const c = Math.pow(earthRadius + obj.avgAlt, 3);
+    const b = Math.sqrt(c / GM);
+    const orbPeriod = Math.round(a * b);
+    // create new object
+    return { name: obj.name, orbitalPeriod: orbPeriod };
   };
 
-  this.setFullName = function (name) {
-    fullName = name;
-  };
-};
+  for (let elem in arr) {
+    newArr.push(getOrbPeriod(arr[elem]));
+  }
 
-var bob = new Person("Bob Ross");
-bob.getFullName();
+  return newArr;
+}
 */
