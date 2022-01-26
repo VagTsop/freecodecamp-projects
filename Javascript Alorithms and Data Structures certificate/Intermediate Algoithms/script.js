@@ -572,9 +572,10 @@ function orbitalPeriod(arr) {
 }
 */
 
+/*
 function palindrome(str) {
-  /* 1. remove all alphanumeric characters (punctuation, spaces and symbols) and turn
-   everything into the same case (lower or upper case) in order to check for palindromes.*/
+  // 1. remove all alphanumeric characters (punctuation, spaces and symbols) and turn
+  // everything into the same case (lower or upper case) in order to check for palindromes.
   const regex = /[^A-Za-z0-9]/g;
   const newStr = str.replace(regex, "");
   const lowerCaseStr = newStr.toLowerCase();
@@ -589,3 +590,4 @@ function palindrome(str) {
   return palindrome(lowerCaseStr.slice(1, lowerCaseStr.length - 1));
 }
 palindrome("A man, a plan, a canal. Panama");
+*/
