@@ -598,3 +598,109 @@ function palindrome(str) {
 }
 palindrome("A man, a plan, a canal. Panama");
 */
+
+/*
+- Roman Numeral Converter
+
+Convert the given number into a roman numeral.
+
+const units = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"];
+//            10,   20,   30,   40,  50,   60,   70,     80,    90
+const tens = ["X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
+//                100,  200,  300,   400, 500,  600,  700,   800,   900
+const hundreds = ["C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];
+//               1000
+const millions = ["M"];
+
+function convertToRoman(num) {
+  let stringNum = num.toString();
+  let romanNum = "";
+
+  if (stringNum.length === 1) {
+    romanNum = units[num - 1];
+  }
+  if (stringNum.length === 2) {
+    stringNum.charAt(0) >= 1 && stringNum.charAt(0) <= 3
+      ? (romanNum = "X".repeat(stringNum.charAt(0)))
+      : stringNum.charAt(0) === "4"
+        ? (romanNum += "XL")
+        : stringNum.charAt(0) === "5"
+          ? (romanNum += "L")
+          : stringNum.charAt(0) === "6"
+            ? (romanNum += "LX")
+            : stringNum.charAt(0) === "7"
+              ? (romanNum += "LXX")
+              : stringNum.charAt(0) === "8"
+                ? (romanNum += "LXXX")
+                : stringNum.charAt(0) === "9"
+                  ? (romanNum += "XC")
+                  : "";
+    stringNum.charAt(1) !== "0"
+      ? (romanNum += units[stringNum.charAt(1) - 1])
+      : "";
+    console.log(romanNum);
+  }
+  if (stringNum.length === 3) {
+    stringNum.charAt(0) >= 1 && stringNum.charAt(0) <= 3
+      ? (romanNum = "C".repeat(stringNum.charAt(0)))
+      : stringNum.charAt(0) === "4"
+        ? (romanNum += "CD")
+        : stringNum.charAt(0) === "5"
+          ? (romanNum += "D")
+          : stringNum.charAt(0) === "6"
+            ? (romanNum += "DC")
+            : stringNum.charAt(0) === "7"
+              ? (romanNum += "DCC")
+              : stringNum.charAt(0) === "8"
+                ? (romanNum += "DCCC")
+                : stringNum.charAt(0) === "9"
+                  ? (romanNum += "CM")
+                  : "";
+
+    stringNum.charAt(1) === "0" && stringNum.charAt(2) === "0"
+      ? romanNum
+      : stringNum.charAt(1) === "0"
+        ? (romanNum += units[stringNum.charAt(1)])
+        : stringNum.charAt(2) === "0"
+          ? (romanNum += tens[stringNum.charAt(2)])
+          : stringNum.charAt(1) !== "0" && stringNum.charAt(2) !== "0"
+            ? (romanNum +=
+              tens[stringNum.charAt(1) - 1] + units[stringNum.charAt(2) - 1])
+            : "";
+  }
+  if (stringNum.length === 4) {
+    stringNum.charAt(0) >= 1 && stringNum.charAt(0) <= 9
+      ? (romanNum = "M".repeat(stringNum.charAt(0)))
+      : "";
+
+    stringNum.charAt(1) === "0" &&
+      stringNum.charAt(2) === "0" &&
+      stringNum.charAt(3) === "0"
+      ? romanNum
+      : stringNum.charAt(1) === "0" && stringNum.charAt(2) === "0"
+        ? (romanNum += units[stringNum.charAt(3) - 1])
+        : stringNum.charAt(1) === "0"
+          ? (romanNum +=
+            tens[stringNum.charAt(2) - 1] + units[stringNum.charAt(3) - 1])
+          : stringNum.charAt(2) === "0"
+            ? (romanNum +=
+              hundreds[stringNum.charAt(1) - 1] + units[stringNum.charAt(3) - 1])
+            : stringNum.charAt(1) !== "0" &&
+              stringNum.charAt(2) !== "0" &&
+              stringNum.charAt(3) !== "0"
+              ? (romanNum +=
+                hundreds[stringNum.charAt(1) - 1] + tens[stringNum.charAt(2) - 1] +
+                units[stringNum.charAt(3) - 1])
+              : "";
+
+    console.log(romanNum);
+  }
+  return romanNum;
+}
+
+convertToRoman(3999); 
+
+
+
+
+*/
